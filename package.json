@@ -21,7 +21,15 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+          "ignoreRestSiblings": true,
+          "destructuredArrayIgnorePattern": "[A-Z]",
+          "caughtErrors": "none"
+      }
+  ]
   },
   "browserslist": {
     "production": [
